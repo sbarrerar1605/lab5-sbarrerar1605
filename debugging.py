@@ -1,5 +1,3 @@
-# debugging.py
-
 def total_steps(steps):
     return sum(steps)
 
@@ -23,20 +21,16 @@ def goal_met(steps):
     return result
 
 
-# pedir datos al usuario
 user_input = input("Enter your daily steps for 7 days separated by spaces:\n")
 
-# convertir a enteros
 steps = list(map(int, user_input.split()))
 
-# cálculos
 total = total_steps(steps)
 avg = average_steps(steps)
 highest = max_steps(steps)
 lowest = min_steps(steps)
 goals = goal_met(steps)
 
-# imprimir resultados
 print(f"Total steps: {total}")
 print(f"Average daily steps: {avg}")
 print(f"Highest steps in a day: {highest}")
