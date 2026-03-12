@@ -1,41 +1,13 @@
 # FREEZE CODE BEGIN
 def greet(name):
-    """
-    Return a greeting message for the given name.
-
-    Args:
-        name (str): The name of the person to greet.
-
-    Returns:
-        str: A greeting in the format "Hello, <name>!".
-    """
     return f"Hello, {name}!"
 
 
 def flip(input_string):
-    """
-    Reverse the characters in the given string.
-
-    Args:
-        input_string (str): The string to be reversed.
-
-    Returns:
-        str: The reversed string.
-    """
     return input_string[::-1]
 
 
 def count_letters(input_string, letter):
-    """
-    Count how many times a specific letter appears in a string.
-
-    Args:
-        input_string (str): The string to search.
-        letter (str): The letter to count (should be a single character).
-
-    Returns:
-        int: The number of occurrences of the letter in the string.
-    """
     count = 0
     for char in input_string:
         if char == letter:
@@ -46,3 +18,42 @@ if __name__ == "__main__":
   print("This file is being run directly.")
 # FREEZE CODE END
 
+
+# ====== FUNCIONES DE LA CALCULADORA ======
+
+def add(num1, num2):
+    return num1 + num2
+
+
+def sub(num1, num2):
+    return num1 - num2
+
+
+def multiply(num1, num2):
+    return num1 * num2
+
+
+def divide(num1, num2):
+    if num2 == 0:
+        return "Error: Division by zero is not allowed."
+    return num1 / num2
+
+
+def exponent(base, exp):
+    return base ** exp
+
+
+def modulo(num1, num2):
+    if num2 == 0:
+        return "Error: Modulo by zero is not allowed."
+    return num1 % num2
+
+
+def floor_divide(num1, num2):
+    if num2 == 0:
+        return "Error: Division by zero is not allowed."
+    return num1 // num2
+
+
+def absolute(num):
+    return abs(num)
