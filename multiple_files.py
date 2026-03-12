@@ -1,10 +1,9 @@
 from utils import flip, count_letters
 
-message = input("Please type your message\n")
+msg = input("Please type your message: ")
 
-flipped = flip(message)
-count_a = count_letters(message, 'a')
+reversed_msg = flip(msg)
 
-encoded = flipped + str(count_a)
+count = count_letters(msg, "a")
 
-print(f"Your encoded message is: {encoded}")
+print(f"Your encoded message is: {reversed_msg}{count}")

@@ -1,14 +1,13 @@
-int_value = None
-str_value = None
+global_int = None
+global_str = None
 
 
-def set_globals(some_int, some_str):
-    global int_value
-    global str_value
-
-    int_value = some_int
-    str_value = some_str
+def set_globals(x, y):
+    global global_int
+    global global_str
+    global_int = x
+    global_str = y
 
 
 def get_globals():
-    return (int_value, str_value)
+    return (global_int, global_str)
